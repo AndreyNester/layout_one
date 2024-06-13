@@ -1,0 +1,76 @@
+.who {
+  position: relative;
+}
+.who__header {
+  margin-top: 142px;
+  text-align: center;
+
+  .who__title {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.48;
+    letter-spacing: 0.02em;
+    color: #323232;
+  }
+  .who__text {
+    font-size: 16px;
+    line-height: 1.68;
+    letter-spacing: 0.04em;
+    color: #323232;
+  }
+}
+
+
+.who__block {
+  width: 1110px;
+  margin: 45px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.who__element {
+  width: 540px;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  img{
+    margin-bottom: 27px;
+  }
+  h1{
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+  }
+  p{
+    display: flex;
+    justify-content: center;
+    margin: 12px 0 33px 0;
+    width: 364px;
+    font-size: 16px;
+    line-height: 1.68;
+    letter-spacing: 0.02em;
+
+  }
+
+}
+.item1 {
+  @include who__box($accent-color, #FFFFFF);
+
+  button{
+    @include standart-button($back-color: #FFFFFF, $color: $accent-color);
+  }
+}
+.item2 {
+  @include who__box(#FFFFFF, #323232);
+
+  button{
+    @include standart-button($back-color: #FFFFFF, $color: $accent-color);
+
+    &:hover{
+      letter-spacing: 0.1em;
+    }
+  }
+}

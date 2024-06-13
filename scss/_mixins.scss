@@ -1,0 +1,24 @@
+@mixin standart-button($width: 172px, $height:58px, $back-color: $accent-color, $color: #FFFFFF){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+  background-color: $back-color;
+  color: $color;
+  border-radius: 29px;
+
+  font-size: 16;
+  font-weight: bold;
+
+  transition: 0.2s;
+
+  &:hover{
+    width: $width+20px ;
+  }
+}
+
+@mixin who__box($box__BGC, $box__color){
+  background-color: $box__BGC;
+  color: $box__color;
+}

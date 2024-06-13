@@ -1,0 +1,36 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex: 1 1 auto;
+}
+*{
+  font-family: poppins;
+}
+[class*='__container']{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+@import 'header';
+@import 'find';
+.wrapper__background{
+  overflow: hidden;
+  position: absolute;
+  top: 1956px;
+  width: 100%;
+  height: 704px;
+  background-color: #F5F6FA;
+}
+@import 'we';
+@import 'start';
+@import 'who';
+@import 'why';
+@import 'thanks';
+@import 'get';
+@import 'footer';

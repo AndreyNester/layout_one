@@ -1,0 +1,35 @@
+.nester {
+  position: relative;
+  $count:10;
+  $margin-left:5px;
+  $all__width:1000;
+
+  display: flex;
+
+
+  width: $all__width;
+
+  border: 2px solid red;
+
+  .nester__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 62px;
+    color: $accent-color;
+    background-color: #ffffff;
+    height: 200px;
+    width: ($all__width/($count - 1))-$margin-left;
+
+    transition: 0.2s;
+
+    &:not(:first-child){
+      margin-left: $margin-left;
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+    
+    border: 2px solid blue;
+  }
+}

@@ -1,0 +1,82 @@
+/*-----start start------------*/
+
+.start__main {
+  position: relative;
+  width: 1110px;
+  height: 464px;
+  background-color: #58BEBF;
+  border-radius: 20px;
+  margin: 145px auto 0 auto;
+  display: flex;
+
+  overflow: hidden;
+
+  .start__decor-iceon1{
+    position: absolute;
+    top:364px;
+    right: 50%;
+    transform: translate(50px,0);
+    width: 304px;
+  }
+
+  .start__decor-iceon2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .start__decor-iceon3{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+.start__img {
+  width: 50%;
+}
+.start__back{
+  position: absolute;
+  top: 115px;
+  right: 50%;
+  padding: 20px;
+  border-radius: 21.6px;
+  background-color: white;
+}
+.start__content {
+  width: 50%;
+  padding-right: 115px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start__title {
+  font-weight: bold;
+  font-size: 42px;
+  color: #FFFFFF;
+  letter-spacing: 0.025em;
+  line-height: 1.48;
+}
+.start__text {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-right: 100px;
+  line-height: 1.68;
+}
+.start__buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+.buttons__item1 {
+
+  @include standart-button()
+}
+.buttons__items2 {
+  @include standart-button($back-color:#FFFFFF, $color:#323232);
+  gap: 8px;
+
+}
+
+/*-----start finish------------*/

@@ -1,0 +1,40 @@
+/*-----header start------------*/
+.header {
+  min-height: 112px;
+  width: 100%;
+}
+.header__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo{
+  a{
+    margin-left: 16px;
+  }
+}
+.header__nav {
+  ul{
+    display: flex;
+    gap: 42px;
+  }
+  li{
+    font-size: 16;
+    &:last-child{
+      margin-right: 20px;
+    }
+  }
+  a{
+    color: #323232;
+    transition: 0.2s;
+    &:hover {
+      color: $accent-color;
+    }
+    &.active{
+      font-weight: bold;
+      color: $accent-color;
+    }
+  }
+}
+/*-----header finish------------*/
